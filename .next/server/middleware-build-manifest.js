@@ -9,6 +9,11 @@ self.__BUILD_MANIFEST = {
   "lowPriorityFiles": [],
   "rootMainFiles": [],
   "pages": {
+    "/": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -24,25 +29,10 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/guide.js"
     ],
-    "/guide/syntax": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/guide/syntax.js"
-    ],
     "/notes": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/notes.js"
-    ],
-    "/notes/calculus": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/notes/calculus.js"
-    ],
-    "/notes/linear-algebra": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/notes/linear-algebra.js"
     ],
     "/notes/linear_algebra_and_data_learning": [
       "static/chunks/webpack.js",

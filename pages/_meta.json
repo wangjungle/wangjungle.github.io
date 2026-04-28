@@ -1,15 +1,18 @@
 {
   "index": {
     "title": "首页",
-    "type": "page",
-    "display": "hidden"
+    "type": "page"
   },
   "guide": {
     "title": "使用指南",
     "type": "page"
   },
   "notes": {
-    "title": "数学笔记",
+    "title": "数学",
+    "type": "page"
+  },
+  "uncategorized": {
+    "title":"未分类的",
     "type": "page"
   }
 }

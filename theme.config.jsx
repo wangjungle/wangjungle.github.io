@@ -1,12 +1,12 @@
 export default {
   // 网站 logo 和标题（显示在左上角）
-  logo: <span style={{ fontWeight: 700 }}>📐 我的数学笔记</span>,
+  logo: <span style={{ fontWeight: 700 }}>Wangjugle's Blog</span>,
 
   // 网站 <head> 里的标题
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>我的数学笔记</title>
+      <title>Wangjungle</title>
     </>
   ),
 
