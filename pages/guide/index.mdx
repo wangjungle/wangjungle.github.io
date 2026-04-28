@@ -1,0 +1,44 @@
+---
+title: 使用指南
+---
+
+# 使用指南
+
+本节介绍如何在 Nextra 中写笔记。
+
+## 目录结构
+
+```
+pages/
+├── _meta.json        ← 控制顶部导航和侧边栏顺序
+├── index.mdx         ← 首页
+├── guide/
+│   ├── _meta.json    ← 控制 guide 下的页面顺序
+│   ├── index.mdx
+│   └── syntax.mdx
+└── notes/
+    ├── _meta.json
+    └── ...
+```
+
+## `_meta.json` 的作用
+
+每个目录下的 `_meta.json` 控制该目录内页面的**侧边栏顺序和显示名称**：
+
+```json
+{
+  "index": "首页",
+  "linear-algebra": "线性代数",
+  "calculus": "微积分"
+}
+```
+
+键名对应文件名（不含 `.mdx`），值是侧边栏显示的标题。
+
+## 文件命名建议
+
+| 文件名 | URL |
+|--------|-----|
+| `pages/notes/index.mdx` | `/notes` |
+| `pages/notes/linear-algebra.mdx` | `/notes/linear-algebra` |
+| `pages/notes/chapter1/intro.mdx` | `/notes/chapter1/intro` |

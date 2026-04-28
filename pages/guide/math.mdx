@@ -1,0 +1,119 @@
+---
+title: 数学公式
+---
+
+import { Callout } from 'nextra/components'
+
+# 数学公式
+
+Nextra 通过 KaTeX 支持 LaTeX 数学公式。在 `next.config.js` 中设置 `latex: true` 即可启用。
+
+## 行内公式
+
+用 `$...$` 包裹行内公式：
+
+```
+勾股定理：$a^2 + b^2 = c^2$
+```
+
+效果：勾股定理：$a^2 + b^2 = c^2$
+
+---
+
+## 块级公式
+
+用 `$$...$$` 包裹独立公式块：
+
+```latex
+$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$
+```
+
+效果：
+
+$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$
+
+---
+
+## 常用语法速查
+
+### 上下标
+
+```latex
+$x^2$        上标
+$x_i$        下标
+$x_i^2$      同时有上下标
+$x^{2n+1}$   大括号用于多字符
+```
+
+### 分数
+
+```latex
+$\frac{1}{2}$         行内分数
+$$\frac{a+b}{c+d}$$   块级分数更大
+```
+
+### 根号
+
+```latex
+$\sqrt{x}$       平方根
+$\sqrt[3]{x}$    立方根
+$\sqrt[n]{x}$    n 次根
+```
+
+### 求和与积分
+
+```latex
+$$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$
+
+$$\int_a^b f(x)\,dx$$
+
+$$\prod_{i=1}^{n} x_i$$
+```
+
+$$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$
+
+$$\int_a^b f(x)\,dx$$
+
+### 矩阵
+
+```latex
+$$
+\begin{pmatrix}
+  a & b \\
+  c & d
+\end{pmatrix}
+$$
+```
+
+$$
+\begin{pmatrix}
+  a & b \\
+  c & d
+\end{pmatrix}
+$$
+
+### 对齐方程组
+
+```latex
+$$
+\begin{aligned}
+  f(x) &= x^2 + 2x + 1 \\
+       &= (x+1)^2
+\end{aligned}
+$$
+```
+
+$$
+\begin{aligned}
+  f(x) &= x^2 + 2x + 1 \\
+       &= (x+1)^2
+\end{aligned}
+$$
+
+<Callout type="info">
+更多 LaTeX 语法可以参考 [KaTeX 支持的函数列表](https://katex.org/docs/supported.html)。
+</Callout>

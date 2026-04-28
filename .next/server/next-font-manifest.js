@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{\"/guide/syntax\":[],\"/guide\":[],\"/notes/linear_algebra_and_data_learning\":[],\"/notes\":[],\"/notes/linear-algebra\":[],\"/notes/calculus\":[]},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"

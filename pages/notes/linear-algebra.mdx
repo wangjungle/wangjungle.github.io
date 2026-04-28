@@ -1,0 +1,95 @@
+---
+title: 线性代数
+---
+
+import { Callout } from 'nextra/components'
+
+# 线性代数
+
+## 向量
+
+**向量**是既有大小又有方向的量。在 $n$ 维空间中，向量表示为：
+
+$$
+\vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix}
+$$
+
+### 向量运算
+
+**加法：** $\vec{u} + \vec{v} = (u_1+v_1,\ u_2+v_2)$
+
+**数乘：** $k\vec{v} = (kv_1,\ kv_2)$
+
+**点积：**
+
+$$
+\vec{u} \cdot \vec{v} = \sum_{i=1}^n u_i v_i = |\vec{u}||\vec{v}|\cos\theta
+$$
+
+---
+
+## 矩阵
+
+$m \times n$ 矩阵 $A$ 有 $m$ 行 $n$ 列：
+
+$$
+A = \begin{pmatrix}
+  a_{11} & a_{12} & \cdots & a_{1n} \\
+  a_{21} & a_{22} & \cdots & a_{2n} \\
+  \vdots & \vdots & \ddots & \vdots \\
+  a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{pmatrix}
+$$
+
+### 矩阵乘法
+
+若 $A$ 是 $m \times k$ 矩阵，$B$ 是 $k \times n$ 矩阵，则 $C = AB$ 是 $m \times n$ 矩阵：
+
+$$
+c_{ij} = \sum_{l=1}^k a_{il} b_{lj}
+$$
+
+<Callout type="warning">
+矩阵乘法**不满足交换律**：一般情况下 $AB \neq BA$。
+</Callout>
+
+---
+
+## 行列式
+
+$2 \times 2$ 矩阵的行列式：
+
+$$
+\det(A) = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc
+$$
+
+$3 \times 3$ 矩阵按第一行展开：
+
+$$
+\det(A) = a_{11}M_{11} - a_{12}M_{12} + a_{13}M_{13}
+$$
+
+其中 $M_{ij}$ 是去掉第 $i$ 行第 $j$ 列后的 $2\times2$ 行列式（余子式）。
+
+---
+
+## 线性方程组
+
+方程组 $A\vec{x} = \vec{b}$ 的解：
+
+| 条件 | 解的情况 |
+|------|---------|
+| $\det(A) \neq 0$ | 唯一解：$\vec{x} = A^{-1}\vec{b}$ |
+| $\det(A) = 0$，$\vec{b}$ 在列空间内 | 无穷多解 |
+| $\det(A) = 0$，$\vec{b}$ 不在列空间内 | 无解 |
+
+### 高斯消元法
+
+```
+增广矩阵 [A|b] 通过行变换化为行阶梯形，再回代求解。
+
+允许的行变换：
+1. 交换两行
+2. 某行乘以非零常数
+3. 某行加上另一行的倍数
+```

@@ -1,0 +1,125 @@
+---
+title: 微积分
+---
+
+import { Callout, Steps } from 'nextra/components'
+
+# 微积分
+
+## 极限
+
+函数 $f(x)$ 在 $x \to a$ 时的极限定义（ε-δ 语言）：
+
+$$
+\lim_{x \to a} f(x) = L \iff \forall \varepsilon > 0,\ \exists \delta > 0,\ 0 < |x-a| < \delta \Rightarrow |f(x)-L| < \varepsilon
+$$
+
+### 常用极限
+
+$$
+\lim_{x \to 0} \frac{\sin x}{x} = 1
+\qquad
+\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e
+$$
+
+---
+
+## 导数
+
+函数 $f(x)$ 在点 $x_0$ 处的导数定义：
+
+$$
+f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}
+$$
+
+### 基本求导公式
+
+| 函数 | 导数 |
+|------|------|
+| $x^n$ | $nx^{n-1}$ |
+| $e^x$ | $e^x$ |
+| $\ln x$ | $\dfrac{1}{x}$ |
+| $\sin x$ | $\cos x$ |
+| $\cos x$ | $-\sin x$ |
+
+### 求导法则
+
+**链式法则：**
+
+$$
+[f(g(x))]' = f'(g(x)) \cdot g'(x)
+$$
+
+**乘积法则：**
+
+$$
+[f(x)g(x)]' = f'(x)g(x) + f(x)g'(x)
+$$
+
+---
+
+## 积分
+
+### 不定积分
+
+$$
+\int x^n\,dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)
+$$
+
+$$
+\int e^x\,dx = e^x + C
+\qquad
+\int \frac{1}{x}\,dx = \ln|x| + C
+$$
+
+### 定积分（微积分基本定理）
+
+若 $F'(x) = f(x)$，则：
+
+$$
+\int_a^b f(x)\,dx = F(b) - F(a)
+$$
+
+<Callout type="info">
+这意味着**求面积问题**（定积分）和**求导数的逆运算**（不定积分）本质上是同一件事。
+</Callout>
+
+### 换元积分法
+
+<Steps>
+### 令 $u = g(x)$
+
+选择替换变量，比如 $u = x^2 + 1$。
+
+### 求 $du$
+
+对 $u$ 求微分：$du = g'(x)\,dx$，即 $du = 2x\,dx$。
+
+### 替换积分变量
+
+$$
+\int f(g(x))g'(x)\,dx = \int f(u)\,du
+$$
+
+### 计算后回代
+
+计算关于 $u$ 的积分，再将 $u = g(x)$ 代回。
+</Steps>
+
+---
+
+## 泰勒展开
+
+函数在 $x = 0$ 处的泰勒级数（麦克劳林级数）：
+
+$$
+e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots
+$$
+
+$$
+\sin x = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{6} + \frac{x^5}{120} - \cdots
+$$
+
+$$
+\cos x = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2} + \frac{x^4}{24} - \cdots
+$$
