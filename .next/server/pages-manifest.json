@@ -1,10 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/notes/linear_algebra_and_data_learning": "pages/notes/linear_algebra_and_data_learning.js",
-  "/notes/calculus": "pages/notes/calculus.js",
-  "/": "pages/index.js",
-  "/notes": "pages/notes.js",
-  "/guide": "pages/guide.js"
-}
+{}

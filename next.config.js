@@ -3,6 +3,9 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.jsx',
   latex: true,
   defaultShowCopyCode: true,
+  mdxOptions:{
+	remarkPlugins: [require('remark-github-alerts')]
+  }
 })
 
 // 仓库名，比如你的仓库叫 my-nextra，就填 '/my-nextra'
