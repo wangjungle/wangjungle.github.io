@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{\"/\":[],\"/notes/differential_geometry\":[],\"/notes/linear-algebra\":[],\"/notes/linear_algebra_and_data_learning\":[],\"/notes\":[]},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{\"/\":[]},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"

@@ -23,26 +23,6 @@ self.__BUILD_MANIFEST = {
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/notes": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/notes.js"
-    ],
-    "/notes/differential_geometry": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/notes/differential_geometry.js"
-    ],
-    "/notes/linear-algebra": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/notes/linear-algebra.js"
-    ],
-    "/notes/linear_algebra_and_data_learning": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/notes/linear_algebra_and_data_learning.js"
     ]
   },
   "ampFirstPages": []

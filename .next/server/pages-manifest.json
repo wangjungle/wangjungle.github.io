@@ -2,9 +2,5 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/": "pages/index.js",
-  "/notes": "pages/notes.js",
-  "/notes/differential_geometry": "pages/notes/differential_geometry.js",
-  "/notes/linear_algebra_and_data_learning": "pages/notes/linear_algebra_and_data_learning.js",
-  "/notes/linear-algebra": "pages/notes/linear-algebra.js"
+  "/": "pages/index.js"
 }
