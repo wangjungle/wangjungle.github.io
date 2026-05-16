@@ -1,0 +1,15 @@
+:root {
+  --color-info: #0969da;
+}
+
+.dark {
+  --color-info: #2f81f7;
+}
+
+.markdown-alert.markdown-alert-info {
+  border-left-color: var(--color-info);
+}
+
+.markdown-alert.markdown-alert-info .markdown-alert-title {
+  color: var(--color-info);
+}
