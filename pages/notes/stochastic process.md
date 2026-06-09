@@ -1,0 +1,5 @@
+# 随机过程
+> [!INFO] 这是根据 《随机过程》何书元，北京大学出版社，编写的文档
+> [`z-lib`](reader.z-lib.by/read/72b0417851c5957928a0e4a2e13ff47373aad962a305093825152509ad3aef55/book/x91vrbBeo0/随机过程.html?client_key=1fFLi67gBrNRP1j1iPy1&extension=pdf&signature=9d25947493ac0a516e7543fd4fe5cda0ce17108f11b26f135416a895c4bee89a&download_location=https%3A%2F%2Fz-lib.by%2Fdl%2Fz2Lo35nZOL&file_access_token=eyJleHAiOjE3Nzk2MDgzMjEsInZlciI6IjEuMCIsInR5cCI6IkpXVCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiJmaWxlX2FjY2VzcyIsImZpbGVfc2hhMjU2IjoiNzJiMDQxNzg1MWM1OTU3OTI4YTBlNGEyZTEzZmY0NzM3M2FhZDk2MmEzMDUwOTM4MjUxNTI1MDlhZDNhZWY1NSIsImFjY2Vzc19sZXZlbCI6ImZ1bGwiLCJpc19wdWJsaWMiOmZhbHNlLCJsaW5rX293bmVyIjo0MDk4MzA3NH0.mwLS0-406wmWA0zwdYVWBDkJmjK9L5NEqT1Dd_4dKpM) 链接
+
+# 泊松过程

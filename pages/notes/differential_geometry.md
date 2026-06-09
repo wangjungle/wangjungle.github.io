@@ -203,3 +203,111 @@ $$= y^j \frac{\partial x^i}{\partial y^j} e_i$$
 对于 $P$ 的随机上的点 $A$，定义映射 $\phi(A)$：
 $$\phi(A) = \frac{\partial x^i}{\partial y^j} e_j$$
 该映射 $\phi(A)$ 是 $\mathbb{R}^m$ 的自然坐标系。将 $\phi$ 的映射为自然坐标系。
+## CH 4 仿射空间中的曲面
+### 曲面的定义
+
+#### 参数方程定义
+
+设
+$$
+\boldsymbol{r}:(-\varepsilon,\varepsilon) \times (-\varepsilon,\varepsilon)  \to \mathscr{A} ^ 3，\boldsymbol{r}(s,t)
+$$
+为 $可微/C^k/C^{\infty}$ 映射，满足 $\partial_s \boldsymbol{r}(s,t)$ 和 $\partial_t \boldsymbol{r}(s,t)$ 不共线，那么称映射 $\boldsymbol{r}$ 为 $可微/C^k/光滑$ 曲面片 $S = \boldsymbol{r}((-\varepsilon,\varepsilon)  \times (-\varepsilon,\varepsilon) )$ 的参数式
+
+> 你把 $s$ 固定，只变动 $t$ 就得到一个曲线，然后再变动 $s$ ，就得到一个曲线族，这个曲线族编织起来就是曲面片，但是如果  $\partial_s \boldsymbol{r}(s,t)$  和 $\partial_t \boldsymbol{r}(s,t)$  共线了，就会导致这个曲线族退化成一根曲线了，够不成曲面片，比如下面这个例子
+>
+> $\boldsymbol{r}(s,t) = (s+t,0,0)$ 
+>
+> 你得到的只是一根直线
+
+#### 函数图像定义
+
+设 $\mathscr{A}^3$ 上建立了仿射坐标系 $\mathcal{A} = \{O,e_1,e_2,e_3\}$ ，坐标变量记为 $x^1,x^2,x^3$，坐标映射记为 $\varphi$ ，$f$ 是定义在 $(-\varepsilon,\varepsilon) \times (-\varepsilon,\varepsilon) \to \mathbb{R}$   上的 $可微/C^k/光滑$ 函数，若 $S \subset \mathscr{A}^3$ 并且
+$$
+S = \{\varphi^{-1}(x^1,x^2,f(x^1,x^2))|-\varepsilon < x^1,x^2 < \varepsilon\}
+$$
+称 $S$ 为 $可微/C^k/光滑$ 曲面片
+
+如下图
+
+<img src="/home/wjj/wangjungle.github.io/public/images/differential_geometry/function_defination.png">
+
+#### 等值面定义 
+
+设 $S \subset \mathscr{A}^3$ $f$ 为 $\mathscr{A}^3$ 中区域 $D$ 上定义的 $可微/C^k/光滑$ 的标量场，并且
+$$
+\forall A \in S ,f(A) = 0
+$$
+如果在 $S$  上还有 $df \ne 0$，那么称$S$ 为 $可微/C^k/光滑$ 曲面片，如下图
+
+<img src="/home/wjj/wangjungle.github.io/public/images/differential_geometry/equal_mian.png"> 
+
+
+
+> 令 $df \ne 0$ 是因为我可以定义一个 $f: \mathscr{A}^3 \to \mathbb{R},f(A)=0$ ，这导致$S$ 变成了全空间，显然不是我们想要的曲面定义
+
+#### 广义坐标系定义
+
+如果$\mathscr{A}^3$ 中一个非空子集$S$，满足
+$$
+\forall A \in S ,\exists U \ni A ,U 是 \mathscr{A}^3 中开区域，且存在一个广义坐标 \{U,\varphi_U\} \\
+\varphi : U \to V \subset \mathbb{R}^3,\varphi_U(S \cap U) \subset \mathbb{R^2}\times {0} \cap V
+$$
+那么称 $S$ 是一个曲面片
+
+> 这就是说，曲面片在局部可以使用广义坐标展平成一个平面
+
+###  隐函数定理和曲面定义的等价性
+
+#### 导映射和导映射的浸入浸没
+
+和数学分析里面的定义是一样的
+
+考虑 
+$$
+F: R^m \supset U \to V \subset R^n
+$$
+若 $m > n$ ，称 $F$ 在 $U$ 内浸入，若 $m < n$ 称 $F$ 在 $U$ 内浸没
+
+若 $a \in U$，并且如果线性映射 $D_a F:R^m \to R^n$ 满足
+$$
+\frac{||F(a+h)-F(a) - D_aF(h)||_{\mathbb{R}^n}}{||h||_{\mathbb{R}^m}} \to 0,||h||_{\mathbb{R}^m} \to 0
+$$ {h}
+那么称 $D_aF$ 是 $F$ 在 $a$ 点的导映射 
+
+> 因为 $D_aF$ 是开集之间的线性映射，所以可以表示成矩阵的形式，我们主要关注它满秩的时候的性质，即 $\text{rank} (D_aF) = \min {m,n}$
+
+#### 隐函数定理
+
+设 $F$ 是 $\mathbb{R}^m$ 中的开集 $U$ 到 $\mathbb{R}^n$ 中的开集 $V$ 的 $C^1$ 映射， 若 $F$ 在 $U$ 内是浸入，则对于任意 $a \in U$，存在 $a$ 的邻域 $W$ 以及 $F(a)$ 的邻域 $W'$ 以及微分同胚（可逆并且每个点的导映射可逆）
+$$
+\varphi: W' \mapsto \varphi(W') \subset \mathbb{R}^n
+$$
+使得：
+$$
+\begin{aligned}
+\varphi \circ F: W &\mapsto \varphi(W'), \\
+(x^1, x^2, \dots, x^m) &\mapsto (x^1, x^2, \dots, x^m, 0, \dots, 0).
+\end{aligned}
+$$
+若 $F$ 在 $U$ 内是浸没，则存在 $\psi^{-1}(W) \subset \mathbb{R}^m$ 到 $W$ 的微分同胚 $\psi$ 使得：
+$$
+\begin{align*}
+F \circ \psi: \mathbb{R}^m \supset \psi^{-1}(W) &\mapsto F(W), \\
+(x^1, x^2, \cdots, x^m) &\mapsto (x^1, x^2, \cdots, x^n).
+\end{align*}
+$$
+
+
+#### 曲面定义的等价性
+
+### 曲面的切空间和曲面上的切向量场
+
+#### 定义切向量，切空间
+
+#### 局部参数标价的变换
+
+
+
+
+
