@@ -230,7 +230,7 @@ $$
 
 如下图
 
-<img src="/home/wjj/wangjungle.github.io/public/images/differential_geometry/function_defination.png">
+<img src="/images/differential_geometry/function_defination.png">
 
 #### 等值面定义 
 
@@ -240,7 +240,7 @@ $$
 $$
 如果在 $S$  上还有 $df \ne 0$，那么称$S$ 为 $可微/C^k/光滑$ 曲面片，如下图
 
-<img src="/home/wjj/wangjungle.github.io/public/images/differential_geometry/equal_mian.png"> 
+<img src="/images/differential_geometry/equal_mian.png"> 
 
 
 
