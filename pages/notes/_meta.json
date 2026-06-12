@@ -2,6 +2,7 @@
   "index": "总览",
   "linear_algebra_and_data_learning": "线性代数与数据学习",
   "differential_geometry": "微分几何",
+  "information_geometry": "信息几何及其应用",
   "big_data": "大数据管理方法与应用",
   "stochastic_process": "随机过程"
 }
