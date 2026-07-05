@@ -38,3 +38,9 @@
 >>> "-11".isnumeric()
 False
 ```
+
+## Ollama 的神奇环境变量
+
+我简直无法理解，在部署`ollama`的时候，需要`export OLLAMA_HOST=`，但是在使用`ollama`的时候，又需要把他给`unset`掉，真是神秘
+
+但是小问题，现在已经全面拥抱`llama.cpp`了，直接从权重文件下载岂不美哉
